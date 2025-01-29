@@ -19,7 +19,6 @@ st.markdown("""
             padding: 1rem;
         }
         .stMetric {
-            background-color: #f0f2f6;
             padding: 1rem;
             border-radius: 0.5rem;
         }
@@ -128,17 +127,6 @@ with col_left:
     fig_temporal.update_traces(line_color='red')
     st.plotly_chart(fig_temporal, use_container_width=True)
 
-    # Distribuição mensal
-    df_mensal = df_filtered.groupby('month')['number'].sum().reset_index()
-    fig_mensal = px.bar(
-        df_mensal,
-        x='month',
-        y='number',
-        title='Distribuição Mensal dos Incêndios',
-        labels={'number': 'Número de Incêndios', 'month': 'Mês'},
-        color_discrete_sequence=['red']
-    )
-    st.plotly_chart(fig_mensal, use_container_width=True)
 
 with col_right:
     # Mapa coroplético
@@ -173,6 +161,34 @@ with col_right:
     
     st.plotly_chart(fig_mapa, use_container_width=True)
 
+col_left1, col_right1 = st.columns(2)
+
+with col_left1: 
+    # Distribuição mensal
+    df_mensal = df_filtered.groupby(['month', 'year'])['number'].sum().reset_index()
+    fig_mensal = px.bar(
+        df_mensal,
+        x='month',
+        y='number',
+        color='year',
+        title='Distribuição Mensal dos Incêndios',
+        labels={'number': 'Número de Incêndios', 'month': 'Mês'},
+        color_continuous_scale=px.colors.sequential.Reds
+    )
+    st.plotly_chart(fig_mensal, use_container_width=True)
+
+with col_right1:
+    # Distribuição por estado
+    df_estados = df_estados.sort_values('number', ascending=True)
+    fig_bar_estado = px.bar(
+        df_estados,
+        x='number',
+        y='state',
+        title='Número de Incêndios por Estado',
+        labels={'number': 'Numero de Incêndios', 'state': 'Estado'}
+    )
+    fig_bar_estado.update_traces(marker_color='red')
+    st.plotly_chart(fig_bar_estado, use_container_width=True)
 # Análise adicional
 st.divider()
 st.subheader('Análise Detalhada por Estado')
