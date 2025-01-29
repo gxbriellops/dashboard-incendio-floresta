@@ -10,7 +10,7 @@ A partir da análise dos dados de incêndios florestais no Brasil, é possível 
 - **Estado com maior número total de incêndios:** Mato Grosso, registrando um total de 96.246 ocorrências.
 - **Estado com menor número total de incêndios:** Sergipe, com 3.237 ocorrências.
 - **Ano com maior incidência de incêndios:** 2003, com uma média de 131,98 incêndios por período registrado.
-- **Média anual de incêndios:** Aproximadamente 108,35 ocorrências por ano.
+- **Média anual de incêndios:** Aproximadamente 34,946 ocorrências por ano.
 - **Maior pico de incêndios em um único mês:** Amazonas, com 998 registros em setembro de 2008.
 - **Mês com maior incidência de incêndios:** Julho, seguido de outubro e agosto, indicando uma forte sazonalidade nos meses mais secos do ano.
 
