@@ -91,22 +91,22 @@ df_filtered = df[
 ]
 
 # Título principal
-st.title('Monitoramento de Incêndios Florestais no Brasil')
+st.title('Monitoramento de Incêndios Florestais no Brasil 🌳 ')
 st.markdown(f'Período: {ano_selecionado[0]} a {ano_selecionado[1]}')
 
 # Métricas principais
 col1, col2, col3 = st.columns(3)
 with col1:
     total_incendios = df_filtered['number'].sum()
-    st.metric('Total de Incêndios', f'{total_incendios:,.0f}')
+    st.metric('Total de Incêndios 🔥 ', f'{total_incendios:,.0f}')
 
 with col2:
     media_anual = total_incendios / len(df_filtered['year'].unique())
-    st.metric('Média de Incêndios por Ano', f'{media_anual:,.0f}')
+    st.metric('Média de Incêndios por Ano 📊 ', f'{media_anual:,.0f}')
 
 with col3:
     max_mes = df_filtered.groupby('month')['number'].sum().idxmax()
-    st.metric('Mês com Mais Incêndios', f'{max_mes}')
+    st.metric('Mês com Mais Incêndios 📆 ', f'{max_mes}')
 
 st.divider()
 
@@ -191,7 +191,7 @@ with col_right1:
     st.plotly_chart(fig_bar_estado, use_container_width=True)
 # Análise adicional
 st.divider()
-st.subheader('Análise Detalhada por Estado')
+st.subheader('Análise Detalhada por Estado 📈 ')
 
 # Tabela com estatísticas por estado
 df_stats = df_filtered.groupby('state').agg({
