@@ -29,5 +29,3 @@ Mato Grosso possui um grande território coberto pelo bioma Cerrado e parte da A
 ### **Por que Sergipe tem menos incêndios?**
 
 Sergipe, por outro lado, tem um clima tropical úmido, com chuvas mais distribuídas ao longo do ano, o que reduz a secura da vegetação e dificulta a propagação de incêndios. Além disso, o estado tem uma extensão territorial menor e uma atividade agropecuária menos intensa em comparação com Mato Grosso, resultando em menos queimadas provocadas por ação humana.
-
-Essa análise fornece informações valiosas para a formulação de estratégias de prevenção e controle de incêndios, contribuindo para a mitigação dos impactos ambientais e sociais causados por esses eventos.
