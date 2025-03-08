@@ -1,6 +1,8 @@
 ### Dasboard interativo que construi com `streamlit`
 Link: https://dashboard-incendio-floresta.streamlit.app/
 
+![Dashboard Preview]()
+
 **Análise de Incêndios Florestais no Brasil: Tendências e Padrões**
 
 A partir da análise dos dados de incêndios florestais no Brasil, é possível identificar padrões e tendências relevantes para a compreensão da dinâmica desses eventos ao longo dos anos.
