@@ -1,7 +1,7 @@
 ### Dasboard interativo que construi com `streamlit`
 Link: https://dashboard-incendio-floresta.streamlit.app/
 
-![Dashboard Preview](https://github.com/gxbriellops/dashboard-incendio-floresta/blob/main/Desktop-2025.03.08-15.17.06.01%20(1).gif)
+![Dashboard Preview](https://github.com/gxbriellops/dashboard-incendio-floresta/blob/main/Grava%C3%A7%C3%A3o-de-Tela-2025-03-08-154138.gif)
 
 **Análise de Incêndios Florestais no Brasil: Tendências e Padrões**
 
